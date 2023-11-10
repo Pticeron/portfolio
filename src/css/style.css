@@ -87,6 +87,23 @@ textarea {
   .heading-primary {
     font-size: 4.5rem;
   }
+} 
+
+.heading-primary {
+  animation: text-pop-up-top 1000ms ease-in-out 700ms both;
+}
+
+@keyframes text-pop-up-top {
+  0% {
+    transform: translateY(0);
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    transform: translateY(-50px);
+    transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
 }
 
 .heading-sec__mb-bg {
@@ -235,11 +252,7 @@ textarea {
 
 .home-hero {
   color: #fff;
-  background: linear-gradient(
-      to right,
-      rgba(171, 12, 136, 0.6),
-      rgba(0, 98, 185, 0.6)
-    ),
+  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)),
     url(../partials/my-bg.jpg);
   background-color: #999;
   background-position: center;
@@ -395,11 +408,7 @@ textarea {
   z-index: -1;
   width: 60%;
   height: 100%;
-  background-image: linear-gradient(
-    to right,
-    rgba(171, 12, 136, 0.6),
-    rgba(0, 98, 185, 0.6)
-  );
+  background-image: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8));
 }
 
 .projects__row-img-cont {
@@ -449,11 +458,7 @@ textarea {
 }
 
 .contact {
-  background: linear-gradient(
-      to right,
-      rgba(171, 12, 136, 0.6),
-      rgba(0, 98, 185, 0.6)
-    ),
+  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)),
     url(../partials/my-bg-two.jpg);
   background-size: cover;
   background-position: center;
@@ -614,7 +619,7 @@ textarea {
   z-index: 1000;
   background: #000;
   background: #fff;
-  box-shadow: 0 10px 100px rgba(203, 72, 155, 0.469);
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
 }
 .header__content {
   display: flex;
